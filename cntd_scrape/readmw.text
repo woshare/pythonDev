@@ -1,0 +1,19 @@
+1，需要安装selenium 和chromedriver
+pip3 install selenium
+
+pip3 show selenium
+
+brew install chromedriver
+
+
+2，chromedriver版本不匹配chrome问题
+官网下载对应版本的
+https://chromedriver.storage.googleapis.com/index.html?path=110.0.5481.77/
+
+在下载目录，解压，存入/usr/local/bin
+
+修改软连接 cd /usr/local/bin
+ln -snf /usr/local/bin/chromedriver chromedriver
+
+3，执行mac权限问题
+xattr -d com.apple.quarantine chromedriver
